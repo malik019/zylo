@@ -1,0 +1,49 @@
+/zylo
+│
+├── public/                 # Public-facing files (Document Root)
+│   ├── index.php           # Front controller
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── uploads/            # User-uploaded images (products, avatars)
+│
+├── app/                    # Core application logic
+│   ├── Controllers/        # Page controllers (Home, Product, Cart, Checkout)
+│   ├── Models/             # Database models (User, Product, Order)
+│   ├── Views/              # HTML templates (PHP/HTML)
+│   ├── Helpers/            # Utility functions (validation, formatting)
+│   └── Middleware/         # Auth, admin checks, etc.
+│
+├── config/
+│   ├── database.php        # DB connection settings
+│   ├── app.php             # App-wide config (paths, debug mode)
+│   └── routes.php          # URL routing table
+│
+├── core/                   # Framework-like core (optional but clean)
+│   ├── Router.php
+│   ├── Controller.php
+│   ├── Model.php
+│   └── Database.php
+│
+├── resources/
+│   ├── views/              # Blade/Twig-like templates (if using)
+│   └── components/         # Reusable UI parts (header, footer, cards)
+│
+├── storage/
+│   ├── logs/               # Error logs
+│   └── cache/              # Cached templates, sessions
+│
+├── vendor/                 # Composer dependencies (if used)
+│
+├── .env                    # Environment variables (DB credentials)
+├── .gitignore
+├── composer.json           # If using Composer
+└── README.md
+- public/ is the only folder exposed to the web server → secure
+- app/ keeps your logic clean and modular
+- config/ centralizes all settings
+- core/ gives you a mini‑framework feel without complexity
+- resources/ keeps your HTML templates tidy
+- storage/ separates logs and cache from your code
+- vendor/ supports Composer if you choose to use it later
+

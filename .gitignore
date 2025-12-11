@@ -1,0 +1,46 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Composer
+/vendor/
+composer.lock
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Logs & cache
+/storage/logs/
+storage/cache/
+*.log
+
+# Sessions
+/storage/sessions/
+
+# Uploaded files (keep repo clean)
+public/uploads/
+public/images/products/
+public/images/users/
+
+# Temporary files
+/tmp/
+*.tmp
+
+# PHP-specific
+*.cache
+*.session
+
+# Node (if you use frontend tooling)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+/dist/
