@@ -1,0 +1,1 @@
+# Zylo is a modern online webshop focused on speed, simplicity, and a smooth shopping experience. The platform provides a clean interface, efficient product browsing, and a lightweight architecture designed for scalability. This repository contains the core codebase for the webshop, including frontend, backend, and integration components.
